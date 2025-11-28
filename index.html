@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>AnyFile | The Ultimate Online PDF Tools & Converter</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="AnyFile | The Ultimate Online PDF Tools & Converter" />
+    <meta name="description" content="Free, secure, and fast online PDF tools. Merge, Split, Compress, Convert (Word, Excel, PPT), and Edit PDFs locally in your browser with zero latency. No uploads required for sensitive data. Experience the flow state of document management." />
+    <meta name="keywords" content="PDF editor, merge PDF, split PDF, compress PDF, PDF to Word, Word to PDF, PDF converter, online PDF tools, secure PDF, client-side PDF, dark mode PDF, AnyFile, free PDF software" />
+    <meta name="author" content="AnyFile Inc." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://anyfile.app/" />
+
+    <!-- Performance Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anyfile.app/" />
+    <meta property="og:title" content="AnyFile - The Ultimate PDF Suite" />
+    <meta property="og:description" content="Experience the future of document management. Liquid glass aesthetics, privacy-first processing. Merge, convert, and secure documents instantly." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200" />
+    <meta property="og:site_name" content="AnyFile" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://anyfile.app/" />
+    <meta property="twitter:title" content="AnyFile - Flow State Tools" />
+    <meta property="twitter:description" content="Merge, Split, Compress. Beautifully. The fastest way to handle PDFs online." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200" />
+
+    <!-- Apple Touch Icon (iOS) -->
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- JSON-LD Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "AnyFile",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "A suite of PDF manipulation tools including merge, split, compress, and convert functionalities.",
+          "featureList": "Merge PDF, Split PDF, Compress PDF, Convert to JPG, Convert Word to PDF",
+          "screenshot": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200"
+        },
+        {
+          "@type": "Organization",
+          "name": "AnyFile Inc.",
+          "url": "https://anyfile.app",
+          "logo": "https://anyfile.app/logo.png",
+          "sameAs": [
+            "https://twitter.com/anyfile",
+            "https://github.com/anyfile"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "AnyFile",
+          "url": "https://anyfile.app",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://anyfile.app/#/?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: 'var(--background)',
+              surface: 'var(--surface)',
+              text: 'var(--text)',
+            },
+            fontFamily: {
+              sans: ['SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Inter', 'sans-serif'],
+              display: ['SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+              mono: ['SF Mono', 'Menlo', 'Monaco', 'Courier New', 'monospace'],
+            },
+            animation: {
+              'float': 'float 8s ease-in-out infinite',
+              'marquee': 'marquee 40s linear infinite',
+              'breathe': 'breathe 20s ease-in-out infinite alternate',
+              'mesh': 'mesh 20s ease-in-out infinite alternate',
+              'draw': 'draw 2s ease-in-out forwards',
+              'pulse-glow': 'pulse-glow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'spin-slow': 'spin 4s linear infinite',
+              'ripple': 'ripple 2s cubic-bezier(0.25, 0.8, 0.5, 1) forwards',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              breathe: {
+                '0%': { transform: 'scale(1)' },
+                '100%': { transform: 'scale(1.15)' },
+              },
+              draw: {
+                '0%': { strokeDasharray: 1000, strokeDashoffset: 1000 },
+                '100%': { strokeDasharray: 1000, strokeDashoffset: 0 },
+              },
+              'pulse-glow': {
+                '0%, 100%': { opacity: '0.5', transform: 'scale(1)' },
+                '50%': { opacity: '0.2', transform: 'scale(1.2)' }
+              },
+              ripple: {
+                '0%': { transform: 'translate(-50%, -50%) scale(0.2)', opacity: '0.6', borderWidth: '0px' },
+                '100%': { transform: 'translate(-50%, -50%) scale(10)', opacity: '0', borderWidth: '0px' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --background: #000000;
+        --text: #ffffff;
+      }
+      .dark {
+        --background: #050505;
+        --text: #ffffff;
+      }
+      .light {
+        --background: #f5f5f7; /* Slightly darker white for Apple feel */
+        --text: #1d1d1f;
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: var(--background);
+        color: var(--text);
+        overflow-x: hidden;
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: color 0.5s ease, background-color 0.5s ease;
+      }
+      
+      /* Optimized Liquid Glass */
+      .liquid-glass {
+        background: rgba(255, 255, 255, 0.03); 
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        will-change: transform, opacity;
+        transform: translateZ(0);
+      }
+      
+      /* Light Mode Glass - Increased opacity for contrast */
+      .light .liquid-glass {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(30px) saturate(120%);
+        -webkit-backdrop-filter: blur(30px) saturate(120%);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+      }
+      
+      .colored-glass-overlay {
+        background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.01) 100%);
+        backdrop-filter: blur(0px);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-left: 1px solid rgba(255,255,255,0.3);
+        box-shadow: inset 0 0 20px rgba(255,255,255,0.05);
+        pointer-events: none;
+      }
+
+      .bg-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        overflow: hidden;
+        background: var(--background);
+      }
+      
+      .glow-layer {
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.03), transparent 70%);
+        pointer-events: none;
+        z-index: -1;
+      }
+      
+      .bg-image {
+        position: absolute;
+        inset: -10%;
+        width: 120%;
+        height: 120%;
+        background-size: cover;
+        background-position: center;
+        transition: opacity 1.5s ease-in-out;
+        opacity: 0;
+        animation: breathe 30s ease-in-out infinite alternate;
+        will-change: transform, opacity;
+      }
+      
+      .bg-image.active {
+        opacity: 0.8;
+      }
+      
+      .light .bg-image.active {
+        opacity: 0.4; /* Subtle background in light mode */
+      }
+      
+      #live-canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1.5s ease;
+        z-index: -1;
+      }
+      #live-canvas.active {
+        opacity: 1;
+      }
+      
+      .bg-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, var(--background) 0%, transparent 20%, transparent 80%, var(--background) 100%);
+        z-index: -1;
+        pointer-events: none;
+        transition: background 0.5s ease;
+      }
+      .light .bg-overlay {
+        background: linear-gradient(to bottom, rgba(245,245,247,0.95) 0%, rgba(245,245,247,0.5) 20%, rgba(245,245,247,0.5) 80%, rgba(245,245,247,0.95) 100%);
+      }
+      
+      .gemini-glow {
+        background: conic-gradient(from 0deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+        filter: blur(12px);
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(128, 128, 128, 0.4);
+        border-radius: 10px;
+      }
+      
+      .light .text-dynamic { color: #111827; }
+      .dark .text-dynamic { color: #f5f5f7; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "pdf-lib": "https://aistudiocdn.com/pdf-lib@^1.17.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
